@@ -1,5 +1,45 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: rgb(50, 237, 50);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.poker-card {
+    background-color: rgb(246, 244, 244);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+#top, #bottom {
+    font-size: 80px;
+    position: absolute;
+    color: rgb(0, 0, 0);
+}
+
+#top {
+    top: 1px;
+    left: 20px
+}
+
+#bottom {
+    bottom: 1px;
+    right: 20px;
+    transform: rotate(180deg);
+}
+
+#value {
+    font-size: 140px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 140px;
+    left: 105px;
 }
